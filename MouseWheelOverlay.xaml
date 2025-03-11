@@ -1,0 +1,16 @@
+﻿<Window x:Class="RIKA_TIMER.MouseWheelOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True" ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        IsHitTestVisible="True"
+        Left="0" Top="0" Width="{Binding ActualWidth, ElementName=ScreenCanvas}">
+    <Canvas x:Name="ScreenCanvas" IsHitTestVisible="False">
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="DpiScale"/>
+        </Canvas.LayoutTransform>
+    </Canvas>
+</Window>
