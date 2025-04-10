@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programmer\\RIKA TIMER\\RIKA TIMER.csproj",
+      "projectUniqueName": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA TIMER.csproj",
       "projectName": "RIKA TIMER",
-      "projectPath": "F:\\Programmer\\RIKA TIMER\\RIKA TIMER.csproj",
+      "projectPath": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA TIMER.csproj",
       "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
-      "outputPath": "F:\\Programmer\\RIKA TIMER\\obj\\",
+      "outputPath": "F:\\Programmer\\RIKA STREAMING HELPER\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

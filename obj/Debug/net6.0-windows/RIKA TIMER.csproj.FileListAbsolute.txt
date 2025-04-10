@@ -22,3 +22,28 @@ F:\Programmer\RIKA TIMER\obj\Debug\net6.0-windows\RIKA TIMER.genruntimeconfig.ca
 F:\Programmer\RIKA TIMER\obj\Debug\net6.0-windows\ref\RIKA TIMER.dll
 F:\Programmer\RIKA TIMER\obj\Debug\net6.0-windows\MouseWheelOverlay.baml
 F:\Programmer\RIKA TIMER\obj\Debug\net6.0-windows\MouseWheelOverlay.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MainWindow.baml
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MouseWheelOverlay.baml
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\DesktopTextWindow.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MouseWheelOverlay.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\App.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER_MarkupCompile.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER_MarkupCompile.lref
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.dll
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\refint\RIKA TIMER.dll
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.pdb
+F:\Programmer\RIKA STREAMING HELPER\bin\Debug\net6.0-windows\RIKA TIMER.exe
+F:\Programmer\RIKA STREAMING HELPER\bin\Debug\net6.0-windows\RIKA TIMER.deps.json
+F:\Programmer\RIKA STREAMING HELPER\bin\Debug\net6.0-windows\RIKA TIMER.runtimeconfig.json
+F:\Programmer\RIKA STREAMING HELPER\bin\Debug\net6.0-windows\RIKA TIMER.dll
+F:\Programmer\RIKA STREAMING HELPER\bin\Debug\net6.0-windows\RIKA TIMER.pdb
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\DesktopTextWindow.baml
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.g.resources
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.GeneratedMSBuildEditorConfig.editorconfig
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.AssemblyInfoInputs.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.AssemblyInfo.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.csproj.CoreCompileInputs.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.sourcelink.json
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA TIMER.genruntimeconfig.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\ref\RIKA TIMER.dll

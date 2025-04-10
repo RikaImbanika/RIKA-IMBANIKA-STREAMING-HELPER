@@ -68,7 +68,7 @@ namespace RIKA_TIMER {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RIKA TIMER;V1.0.0.0;component/mousewheeloverlay.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RIKA TIMER;component/mousewheeloverlay.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MouseWheelOverlay.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

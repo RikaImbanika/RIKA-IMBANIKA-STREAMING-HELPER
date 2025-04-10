@@ -124,7 +124,7 @@ namespace RIKA_TIMER
 
             FillAvas();
 
-            var timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.65) };
+            var timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.40) };
             timer.Tick += (s, e) => SwitchAvas();
             timer.Start();
 
@@ -357,16 +357,21 @@ namespace RIKA_TIMER
 
         private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            Point position = e.GetPosition(TransparentRectangle);
+            /*            Point position = e.GetPosition(TransparentRectangle);
 
-            if (position.X >= 0 && position.X <= TransparentRectangle.ActualWidth &&
-                position.Y >= 0 && position.Y <= TransparentRectangle.ActualHeight)
-            {
-                if (e.ChangedButton == MouseButton.Left)
-                    Window_MouseLeftButtonDown(this, e);
-                else if (e.ChangedButton == MouseButton.Right)
-                    Window_MouseRightButtonDown(this, e);
-            }
+                        if (position.X >= 0 && position.X <= TransparentRectangle.ActualWidth &&
+                            position.Y >= 0 && position.Y <= TransparentRectangle.ActualHeight)
+                        {
+                            if (e.ChangedButton == MouseButton.Left)
+                                Window_MouseLeftButtonDown(this, e);
+                            else if (e.ChangedButton == MouseButton.Right)
+                                Window_MouseRightButtonDown(this, e);
+                        }*/
+
+            if (e.ChangedButton == MouseButton.Left)
+                Window_MouseLeftButtonDown(this, e);
+            else if (e.ChangedButton == MouseButton.Right)
+                Window_MouseRightButtonDown(this, e);
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

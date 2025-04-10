@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RIKA TIMER")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+084ec30afa4ed939c589b09939f6031951082f53")]
 [assembly: System.Reflection.AssemblyProductAttribute("RIKA TIMER")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RIKA TIMER")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

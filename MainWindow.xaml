@@ -16,7 +16,7 @@
         <Grid.LayoutTransform>
             <ScaleTransform x:Name="GlobalScale" ScaleX="1" ScaleY="1"/>
         </Grid.LayoutTransform>
-        <Grid x:Name="RootGrid" Width="466" Height="372" Margin="0,-12,0,0">
+        <Grid x:Name="RootGrid" Width="466" Height="450" Margin="0,-12,0,0">
             <StackPanel Margin="15,15,15,15">
                 <StackPanel>
                     <StackPanel>
@@ -99,14 +99,23 @@
                                     <Image Margin="12,7,12,7" x:Name="Ava2" Stretch="Uniform" Opacity="1"/>
                                 </Viewbox>
                             </Grid>
-                            <TextBlock Grid.Row="5" Height="74" Margin="12,-5,12,7" Text="3&#x0A;2&#x0A;1" x:Name="Quote" MaxWidth="2800" TextWrapping="Wrap" FontSize="18" TextAlignment="Center" FontFamily="Segoe UI">
-                                <TextBlock.Foreground>
-                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                        <GradientStop Color="White" Offset="0"/>
-                                        <GradientStop Color="Black" Offset="1"/>
-                                    </LinearGradientBrush>
-                                </TextBlock.Foreground>
-                            </TextBlock>
+                            <Grid Grid.Row="5" Height="135" Margin="12,-5,12,7">
+                                <Viewbox MaxWidth="2800" StretchDirection="DownOnly" Stretch="Uniform" VerticalAlignment="Top">
+                                    <TextBlock Text="33333&#xA;2&#xA;1&#xA;4" 
+                                           x:Name="Quote" 
+                                           TextWrapping="Wrap" 
+                                           FontSize="36" 
+                                           TextAlignment="Center" 
+                                           FontFamily="Segoe UI">
+                                        <TextBlock.Foreground>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Color="White" Offset="0"/>
+                                                <GradientStop Color="Black" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TextBlock.Foreground>
+                                    </TextBlock>
+                                </Viewbox>
+                            </Grid>
                             <Grid.Effect>
                                 <DropShadowEffect Direction="0" ShadowDepth="1" Color="Black" Opacity="100" BlurRadius="7"/>
                             </Grid.Effect>
@@ -123,9 +132,6 @@
                     <DropShadowEffect Direction="270" ShadowDepth="1" Color="Black" Opacity="100" BlurRadius="7" />
                 </StackPanel.Effect>
             </StackPanel>
-            <Rectangle x:Name="TransparentRectangle" Fill="#013D689B"
-				   VerticalAlignment="Stretch"
-				   HorizontalAlignment="Stretch"/>
             <Grid.Effect>
                 <DropShadowEffect ShadowDepth="0" Color="Black" Opacity="300" BlurRadius="40" />
             </Grid.Effect>

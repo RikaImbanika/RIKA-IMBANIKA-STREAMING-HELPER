@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Programmer\\RIKA TIMER\\",
+  "WorkspaceRootPath": "F:\\Programmer\\RIKA STREAMING HELPER\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\mousewheeloverlay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\mousewheeloverlay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:mousewheeloverlay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\mousewheeloverlay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\mousewheeloverlay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:mousewheeloverlay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\globalmousehook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\globalmousehook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:globalmousehook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\ripplemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\ripplemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:ripplemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\wpfscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\wpfscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:wpfscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:win32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\ripplewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\ripplewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:ripplewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika timer\\desktoptextwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|f:\\programmer\\rika streaming helper\\desktoptextwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFBA5C36-CB63-4290-A7E1-263A0A35714C}|RIKA TIMER.csproj|solutionrelative:desktoptextwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,60 +63,56 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Win32.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\Win32.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\Win32.cs",
               "RelativeDocumentMoniker": "Win32.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\Win32.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\Win32.cs",
               "RelativeToolTip": "Win32.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T21:59:25.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T21:59:25.127Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "WpfScreen.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\WpfScreen.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\WpfScreen.cs",
               "RelativeDocumentMoniker": "WpfScreen.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\WpfScreen.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\WpfScreen.cs",
               "RelativeToolTip": "WpfScreen.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAYwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T21:49:33.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T21:49:33.185Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MouseWheelOverlay.xaml.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\MouseWheelOverlay.xaml.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\MouseWheelOverlay.xaml.cs",
               "RelativeDocumentMoniker": "MouseWheelOverlay.xaml.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\MouseWheelOverlay.xaml.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\MouseWheelOverlay.xaml.cs",
               "RelativeToolTip": "MouseWheelOverlay.xaml.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwBUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T21:30:32.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T21:30:32.555Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MouseWheelOverlay.xaml",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\MouseWheelOverlay.xaml",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\MouseWheelOverlay.xaml",
               "RelativeDocumentMoniker": "MouseWheelOverlay.xaml",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\MouseWheelOverlay.xaml",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\MouseWheelOverlay.xaml",
               "RelativeToolTip": "MouseWheelOverlay.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T21:27:38.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T21:27:38.454Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "DesktopTextWindow.xaml.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\DesktopTextWindow.xaml.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\DesktopTextWindow.xaml.cs",
               "RelativeDocumentMoniker": "DesktopTextWindow.xaml.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\DesktopTextWindow.xaml.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\DesktopTextWindow.xaml.cs",
               "RelativeToolTip": "DesktopTextWindow.xaml.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAgwG8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -137,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "RippleWindow.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\RippleWindow.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\RippleWindow.cs",
               "RelativeDocumentMoniker": "RippleWindow.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\RippleWindow.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\RippleWindow.cs",
               "RelativeToolTip": "RippleWindow.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwC0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,35 +145,33 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "RippleManager.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\RippleManager.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\RippleManager.cs",
               "RelativeDocumentMoniker": "RippleManager.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\RippleManager.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\RippleManager.cs",
               "RelativeToolTip": "RippleManager.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T18:07:46.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T18:07:46.048Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "GlobalMouseHook.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\GlobalMouseHook.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\GlobalMouseHook.cs",
               "RelativeDocumentMoniker": "GlobalMouseHook.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\GlobalMouseHook.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\GlobalMouseHook.cs",
               "RelativeToolTip": "GlobalMouseHook.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowC8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T20:01:35.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T20:01:35.543Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AudioPlayer.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\AudioPlayer.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\AudioPlayer.cs",
               "RelativeDocumentMoniker": "AudioPlayer.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\AudioPlayer.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\AudioPlayer.cs",
               "RelativeToolTip": "AudioPlayer.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAhwFQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,11 +181,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAjwH4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T00:06:58.17Z",
               "EditorCaption": ""
@@ -200,9 +194,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "F:\\Programmer\\RIKA TIMER\\MainWindow.xaml",
+              "DocumentMoniker": "F:\\Programmer\\RIKA STREAMING HELPER\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "F:\\Programmer\\RIKA TIMER\\MainWindow.xaml",
+              "ToolTip": "F:\\Programmer\\RIKA STREAMING HELPER\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-23T14:52:34.03Z",
