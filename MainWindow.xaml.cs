@@ -124,7 +124,7 @@ namespace RIKA_TIMER
 
             FillAvas();
 
-            var timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.40) };
+            var timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.35) };
             timer.Tick += (s, e) => SwitchAvas();
             timer.Start();
 
@@ -133,12 +133,24 @@ namespace RIKA_TIMER
             ShuffleQuotes();
             Quote.Text = _quotes[_quotesIds[_currentQuoteIndex]];
 
-            _quoteTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(5) };
+            _quoteTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(4) };
             _quoteTimer.Tick += (s, e) => ChangeQuote();
             _quoteTimer.Start();
 
             MouseWheelOverlay mwo = new MouseWheelOverlay();
             mwo.Show();
+
+            var mouseTrail = new MouseTrailOverlay();
+
+            Pause2.Opacity = 0;
+
+/*            Thread myThread = new Thread(Wtf);
+            myThread.Start();
+
+            void Wtf()
+            {*/
+                mouseTrail.Start();
+            //}
         }
 
         private void ChangeQuote()
@@ -308,8 +320,8 @@ namespace RIKA_TIMER
             var transform = new ScaleTransform
             {
                 ScaleX = 1,
-                CenterX = bitmap.PixelWidth / 2.0
-            };
+                CenterX = bitmap.Width / 2.0
+            }; /////////////////////////////////////////////
 
             if (mirrow)
                 transform.ScaleX = -1;
@@ -357,21 +369,12 @@ namespace RIKA_TIMER
 
         private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            /*            Point position = e.GetPosition(TransparentRectangle);
-
-                        if (position.X >= 0 && position.X <= TransparentRectangle.ActualWidth &&
-                            position.Y >= 0 && position.Y <= TransparentRectangle.ActualHeight)
-                        {
-                            if (e.ChangedButton == MouseButton.Left)
-                                Window_MouseLeftButtonDown(this, e);
-                            else if (e.ChangedButton == MouseButton.Right)
-                                Window_MouseRightButtonDown(this, e);
-                        }*/
-
             if (e.ChangedButton == MouseButton.Left)
                 Window_MouseLeftButtonDown(this, e);
             else if (e.ChangedButton == MouseButton.Right)
                 Window_MouseRightButtonDown(this, e);
+
+            RippleManager.OnMouseDown(sender, e); //
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -406,6 +409,7 @@ namespace RIKA_TIMER
                 _lastStartTime = DateTime.Now;
                 _lastStartElapsed = _actualElapsed;
                 _actualElapsed = _lastStartElapsed;
+                Pause2.Opacity = 1;
             }
             else
             {
@@ -413,6 +417,7 @@ namespace RIKA_TIMER
                 _lastStartElapsed = _actualElapsed;
                 _actualElapsed = _lastStartElapsed;
                 _timer.Start();
+                Pause2.Opacity = 0;
             }
         }
 
@@ -631,6 +636,7 @@ namespace RIKA_TIMER
             Rika.Foreground = gradient;
             Track.Foreground = gradient;
             Quote.Foreground = gradient;
+            Pause2.Foreground = gradient;
 
             SaveState();
             if ((DateTime.Now - _lastClickTime).TotalSeconds > 2) _clickCount = 0;

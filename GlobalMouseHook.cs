@@ -69,58 +69,6 @@ namespace RIKA_TIMER
             return CallNextHookEx(_hookID, nCode, wParam, lParam);
         }
 
-        /* private IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
-         {
-             if (nCode >= 0)
-             {
-                 // Обработка кликов
-                 var button = GetButton(wParam);
-                 if (button.HasValue)
-                 {
-                     Application.Current.Dispatcher.BeginInvoke(() =>
-                     {
-                         MouseDown?.Invoke(this, new MouseButtonEventArgs(
-                             InputManager.Current.PrimaryMouseDevice,
-                             0,
-                             button.Value));
-                     });
-                 }
-
-                 // Обработка колесика
-                 // В классе GlobalMouseHook
-                 // В классе GlobalMouseHook
-                 // В классе GlobalMouseHook
-                 // В классе GlobalMouseHook
-                 // В классе GlobalMouseHook
-                 if ((int)wParam == 0x020A) // WM_MOUSEWHEEL
-                 {
-                     var hookStruct = Marshal.PtrToStructure<MSLLHOOKSTRUCT>(lParam);
-
-                     // Извлекаем младшие 16 бит (LOWORD) и интерпретируем как знаковое число
-                     int rawLoword = (int)(hookStruct.mouseData & 0xFFFF);
-                     int direction = (short)rawLoword; // Приводим к short для сохранения знака
-
-                     // Учет обратной прокрутки (если нужно)
-                     bool isReverseScroll = SystemParameters.SwapButtons; // Пример, замените на реальную проверку
-                     if (isReverseScroll) direction *= -1;
-
-                     // Нормализуем направление: 1 (Up), -1 (Down)
-                     direction = Math.Sign(direction);
-
-                     Debug.WriteLine($"Raw: 0x{hookStruct.mouseData:X8} | Direction: {direction}");
-
-                     Application.Current.Dispatcher.BeginInvoke(() =>
-                     {
-                         MouseWheel?.Invoke(this, new MouseWheelEventArgs(
-                             InputManager.Current.PrimaryMouseDevice,
-                             Environment.TickCount,
-                             direction));
-                     });
-                 }
-             }
-             return CallNextHookEx(_hookID, nCode, wParam, lParam);
-         }*/
-
         private MouseButton? GetButton(IntPtr wParam)
         {
             switch ((int)wParam)

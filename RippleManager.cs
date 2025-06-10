@@ -34,7 +34,7 @@ namespace RIKA_TIMER
             _hook.Start();
         }
 
-        private static void OnMouseDown(object sender, MouseButtonEventArgs e)
+        public static void OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (_windowPool.Count == 0) return;
 
