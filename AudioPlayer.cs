@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace RIKA_TIMER
+namespace RIKA_IMBANIKA_LIFE_HELPER
 {
     public class AudioPlayer
     {
@@ -14,12 +14,13 @@ namespace RIKA_TIMER
         private List<string> _playlist = new List<string>();
         private int _currentTrackIndex = -1;
         private readonly Random _random = new Random();
-        private string _folderPath = Environment.CurrentDirectory + "\\Audios\\";
+        private string _folderPath;
         private DesktopTextWindow _dtw;
         public MainWindow _MW;
 
         public AudioPlayer()
         {
+            _folderPath = $"{S.PF}Audios";
             _player.LoadedBehavior = MediaState.Manual;
             _player.UnloadedBehavior = MediaState.Manual;
 

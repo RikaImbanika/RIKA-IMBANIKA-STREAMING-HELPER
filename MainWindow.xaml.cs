@@ -18,7 +18,7 @@ using static System.Net.Mime.MediaTypeNames;
 using Color = System.Windows.Media.Color;
 using Point = System.Windows.Point;
 
-namespace RIKA_TIMER
+namespace RIKA_IMBANIKA_LIFE_HELPER
 { 
     public partial class MainWindow : Window
     {
@@ -29,9 +29,6 @@ namespace RIKA_TIMER
         private double _initialLeft;
         private double _initialTop;
         private Point _initialClickPoint;
-        //private Point _resizeStartScreenPoint;
-        //private double _ratioX;
-        //private double _ratioY;
 
         private DateTime _lastStartTime;
         private TimeSpan _actualElapsed;
@@ -41,12 +38,9 @@ namespace RIKA_TIMER
         private DateTime _lastSaveTime;
         private int _clickCount;
         private DateTime _lastClickTime;
-        private const string _saveFile = "timer_state.txt";
-        private const string _MFile = "M.txt";
+        private string _saveFile;
+        private string _MFile;
         private bool _isResizing;
-        //private Point _resizeStartPoint;
-        //private double _resizeStartWidth;
-        //private double _resizeStartHeight;
         private DispatcherTimer _resizeTimer;
         private bool _resizePending = false;
         private bool _alreadyResizing = false;
@@ -99,6 +93,11 @@ namespace RIKA_TIMER
 
             InitializeComponent();
 
+            S.Init();
+
+            _saveFile = $"{S.PF}timer_state.txt";
+            _MFile = $"{S.PF}M.txt";
+
             GlobalScale.ScaleX = _scale;
             GlobalScale.ScaleY = _scale;
 
@@ -107,7 +106,7 @@ namespace RIKA_TIMER
             _random = new Random();
             _currentColor = _random.Next(_colors.Count);
             _nextColor = GetNextColor();
-            Rika.Text = $"Rika Imbanika";
+            Rika.Text = $"Rika Imbanika 0_0";
 
             _ap = new AudioPlayer();
             _ap._MW = this;
@@ -119,7 +118,7 @@ namespace RIKA_TIMER
 
             this.Closing += MainWindow_Closing;
 
-            string nick = File.ReadAllText($"{Environment.CurrentDirectory}\\Text\\Nick.txt");
+            string nick = File.ReadAllText($"{S.PF}Text\\Nick.txt");
             Rika.Text = nick;
 
             FillAvas();
@@ -128,7 +127,7 @@ namespace RIKA_TIMER
             timer.Tick += (s, e) => SwitchAvas();
             timer.Start();
 
-            _quotes = File.ReadAllLines($"{Environment.CurrentDirectory}\\Text\\Quotes.txt");
+            _quotes = File.ReadAllLines($"{S.PF}\\Text\\Quotes.txt");
             _quotesIds = new int[_quotes.Length];
             ShuffleQuotes();
             Quote.Text = _quotes[_quotesIds[_currentQuoteIndex]];
@@ -144,13 +143,7 @@ namespace RIKA_TIMER
 
             Pause2.Opacity = 0;
 
-/*            Thread myThread = new Thread(Wtf);
-            myThread.Start();
-
-            void Wtf()
-            {*/
-                mouseTrail.Start();
-            //}
+            mouseTrail.Start();
         }
 
         private void ChangeQuote()
@@ -192,7 +185,7 @@ namespace RIKA_TIMER
 
         private void ShuffleQuotes()
         {
-            _quotes = File.ReadAllLines($"{Environment.CurrentDirectory}\\Text\\Quotes.txt");
+            _quotes = File.ReadAllLines($"{S.PF}Text\\Quotes.txt");
             for (int i = 0; i < _quotes.Length; i++)
                 if (_quotes[i].Contains('|'))
                     _quotes[i] = _quotes[i].Replace('|', '\n');
@@ -249,7 +242,7 @@ namespace RIKA_TIMER
 
         private void FillAvas()
         {
-            _avas = Directory.GetFiles($"{Environment.CurrentDirectory}\\Avas");
+            _avas = Directory.GetFiles($"{S.PF}Avas");
             _mirrowMask = new bool[_avas.Length];
 
             Random rnd = new Random();

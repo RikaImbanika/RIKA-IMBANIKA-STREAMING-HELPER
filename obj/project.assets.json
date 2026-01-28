@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net8.0-windows7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net8.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Cat\\.nuget\\packages\\": {},
@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA TIMER.csproj",
-      "projectName": "RIKA TIMER",
-      "projectPath": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA TIMER.csproj",
+      "projectUniqueName": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
+      "projectName": "RIKA IMBANIKA LIFE HELPER",
+      "projectPath": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
       "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
       "outputPath": "F:\\Programmer\\RIKA STREAMING HELPER\\obj\\",
       "projectStyle": "PackageReference",
@@ -29,15 +29,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net8.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows7.0",
           "projectReferences": {}
         }
       },
@@ -54,8 +54,8 @@
       "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows7.0",
         "imports": [
           "net461",
           "net462",
@@ -71,11 +71,11 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

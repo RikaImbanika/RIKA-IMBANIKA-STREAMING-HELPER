@@ -8,7 +8,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-namespace RIKA_TIMER
+namespace RIKA_IMBANIKA_LIFE_HELPER
 {
     public partial class MouseWheelOverlay : Window
     {

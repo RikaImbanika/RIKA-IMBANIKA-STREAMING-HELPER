@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace RIKA_TIMER
+namespace RIKA_IMBANIKA_LIFE_HELPER
 {
     using System;
     using System.Linq;
@@ -62,8 +62,8 @@ namespace RIKA_TIMER
                 Top = 0,
                 Width = SystemParameters.VirtualScreenWidth,
                 Height = SystemParameters.VirtualScreenHeight,
-                Focusable = false,  // Окно не может получать фокус
-                ShowActivated = false  // Окно не активируется при показе
+                Focusable = false,  // Window can't get focus
+                ShowActivated = false  // Anactivateable
             };
 
             _canvas = new Canvas
@@ -82,7 +82,6 @@ namespace RIKA_TIMER
             _renderTimer.Tick += RenderFrame;
             _renderTimer.Start();
 
-            // Инициализация позиций мыши
             var pos = GetCurrentMousePosition();
 
             _previousMousePos = pos;
@@ -132,7 +131,7 @@ namespace RIKA_TIMER
                 StrokeThickness = TrailWidth,
                 StrokeStartLineCap = PenLineCap.Round,
                 StrokeEndLineCap = PenLineCap.Round,
-                IsHitTestVisible = false // Важно: линия не блокирует клики
+                IsHitTestVisible = false // Don't block clicks
             };
             _canvas.Children.Add(trailLine);
 
@@ -169,7 +168,6 @@ namespace RIKA_TIMER
                 return lpPoint;
             }
 
-            // И добавьте в класс Win32:
             [DllImport("user32.dll")]
             public static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
@@ -190,52 +188,48 @@ namespace RIKA_TIMER
 
         public static Color GetRainbowColor(float x)
         {
-            // Нормализуем x в диапазон [0, 1), чтобы он был зацикленным
             x = x % 1.0f;
-            if (x < 0) x += 1.0f; // Обрабатываем отрицательные значения
+            if (x < 0) x += 1.0f;
 
-            // Разбиваем диапазон на 6 секторов (каждый соответствует части радуги)
             float sectorSize = 1.0f / 6.0f;
             int sector = (int)(x / sectorSize);
             float positionInSector = (x % sectorSize) / sectorSize;
 
-            // Генерируем RGB-значения в зависимости от сектора
             float r = 0, g = 0, b = 0;
             switch (sector)
             {
-                case 0: // Красный -> Жёлтый
+                case 0: 
                     r = 1.0f;
                     g = positionInSector;
                     b = 0.0f;
                     break;
-                case 1: // Жёлтый -> Зелёный
+                case 1:
                     r = 1.0f - positionInSector;
                     g = 1.0f;
                     b = 0.0f;
                     break;
-                case 2: // Зелёный -> Голубой
+                case 2:
                     r = 0.0f;
                     g = 1.0f;
                     b = positionInSector;
                     break;
-                case 3: // Голубой -> Синий
+                case 3:
                     r = 0.0f;
                     g = 1.0f - positionInSector;
                     b = 1.0f;
                     break;
-                case 4: // Синий -> Пурпурный
+                case 4:
                     r = positionInSector;
                     g = 0.0f;
                     b = 1.0f;
                     break;
-                case 5: // Пурпурный -> Красный
+                case 5:
                     r = 1.0f;
                     g = 0.0f;
                     b = 1.0f - positionInSector;
                     break;
             }
 
-            // Преобразуем значения [0, 1] в байты [0, 255]
             return Color.FromArgb(
                 255,
                 (byte)(r * 255),

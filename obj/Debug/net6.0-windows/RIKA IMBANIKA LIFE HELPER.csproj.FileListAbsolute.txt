@@ -1,0 +1,10 @@
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA IMBANIKA LIFE HELPER.csproj.ResolveComReference.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MainWindow.baml
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MouseWheelOverlay.baml
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\DesktopTextWindow.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\MouseWheelOverlay.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\App.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA IMBANIKA LIFE HELPER_Content.g.cs
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA IMBANIKA LIFE HELPER_MarkupCompile.cache
+F:\Programmer\RIKA STREAMING HELPER\obj\Debug\net6.0-windows\RIKA IMBANIKA LIFE HELPER_MarkupCompile.lref
