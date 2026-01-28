@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RIKA IMBANIKA LIFE HELPER/1.0.0": {
+        "runtime": {
+          "RIKA IMBANIKA LIFE HELPER.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RIKA IMBANIKA LIFE HELPER/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
