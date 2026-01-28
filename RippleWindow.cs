@@ -13,7 +13,7 @@ using System.Windows.Media.Animation;
 using System.Diagnostics;
 using System.Windows.Controls;
 
-namespace RIKA_TIMER
+namespace RIKA_IMBANIKA_LIFE_HELPER
 {
     public class RippleWindow : Window
     {
