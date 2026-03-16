@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
+      "projectUniqueName": "F:\\Programmer\\RIKA-IMBANIKA-LIFE-HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
       "projectName": "RIKA IMBANIKA LIFE HELPER",
-      "projectPath": "F:\\Programmer\\RIKA STREAMING HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
+      "projectPath": "F:\\Programmer\\RIKA-IMBANIKA-LIFE-HELPER\\RIKA IMBANIKA LIFE HELPER.csproj",
       "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
-      "outputPath": "F:\\Programmer\\RIKA STREAMING HELPER\\obj\\",
+      "outputPath": "F:\\Programmer\\RIKA-IMBANIKA-LIFE-HELPER\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

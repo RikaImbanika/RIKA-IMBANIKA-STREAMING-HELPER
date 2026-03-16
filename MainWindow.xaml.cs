@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
@@ -59,6 +60,11 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
         private double _initialScale;
         private DispatcherTimer _clickTimer;
 
+        private Thread _movingThread;
+        private MovingImageWindow _movingWindow;
+        private Dispatcher _movingDispatcher;
+        private ManualResetEventSlim _movingWindowReady = new ManualResetEventSlim(false);
+
         private string[] _avas;
 
         private int[] _reids;
@@ -76,6 +82,8 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
         int _currentQuoteIndex;
 
+        bool[] _twilightSparkleState;
+
         private readonly List<Color> _colors = new List<Color>
         {
             Colors.OrangeRed,
@@ -89,6 +97,7 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
         public MainWindow()
         {
+            _twilightSparkleState = new bool[4];
             _scale = 1;
 
             InitializeComponent();
@@ -100,6 +109,8 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
             GlobalScale.ScaleX = _scale;
             GlobalScale.ScaleY = _scale;
+
+            this.Title = "RIKA LIFE";
 
             LoadState();
             InitializeTimers();
@@ -123,9 +134,9 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
             FillAvas();
 
-            var timer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.35) };
-            timer.Tick += (s, e) => SwitchAvas();
-            timer.Start();
+            var avaTimer = new DispatcherTimer { Interval = TimeSpan.FromMinutes(0.35) };
+            avaTimer.Tick += (s, e) => SwitchAvas();
+            avaTimer.Start();
 
             _quotes = File.ReadAllLines($"{S.PF}\\Text\\Quotes.txt");
             _quotesIds = new int[_quotes.Length];
@@ -144,6 +155,89 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             Pause2.Opacity = 0;
 
             mouseTrail.Start();
+
+            Moving();
+        }
+
+        private void Moving()
+        {
+            if (_movingThread == null)
+                StartMovingImageInSeparateThread();
+
+            Task.Run(() =>
+            {
+                Random rnd = new Random();
+                while (true)
+                {
+                    Thread.Sleep(9000 + rnd.Next(18000));
+                    int i = rnd.Next(4);
+
+                    // Проверяем, что диспетчер еще жив
+                    if (_movingDispatcher != null && !_movingDispatcher.HasShutdownStarted)
+                    {
+                        _movingDispatcher.BeginInvoke(new Action(() =>
+                        {
+                            try
+                            {
+                                string direction = "Forward";
+                                if (_twilightSparkleState[i])
+                                    direction = "Backward";
+
+                                _twilightSparkleState[i] = !_twilightSparkleState[i];
+
+                                switch (i)
+                                {
+                                    case 0: _movingWindow?.StartAnimation("Bottom", direction); break;
+                                    case 1: _movingWindow?.StartAnimation("Left", direction); break;
+                                    case 2: _movingWindow?.StartAnimation("Right", direction); break;
+                                    case 3: _movingWindow?.StartAnimation("Top", direction); break;
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                System.Diagnostics.Debug.WriteLine($"Error in moving animation: {ex.Message}");
+                            }
+                        }));
+                    }
+                }
+            });
+        }
+
+        // Улучшенный метод запуска отдельного потока
+        private void StartMovingImageInSeparateThread()
+        {
+            _movingWindowReady.Reset();
+
+            _movingThread = new Thread(() =>
+            {
+                try
+                {
+                    // Создаем диспетчер для этого потока
+                    _movingDispatcher = Dispatcher.CurrentDispatcher;
+
+                    _movingWindow = new MovingImageWindow($"{S.PF}Images\\Sparkle.png");
+                    _movingWindow.SizeFactor = 0.2;
+                    _movingWindow.Amplitude = 0.5;
+                    _movingWindow.Frequency = 1.0;
+                    _movingWindow.Duration = 5.0;
+
+                    _movingWindowReady.Set();
+
+                    // Запускаем диспетчер (это блокирующий вызов)
+                    Dispatcher.Run();
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Error in moving thread: {ex.Message}");
+                }
+            });
+
+            _movingThread.SetApartmentState(ApartmentState.STA);
+            _movingThread.IsBackground = true;
+            _movingThread.Start();
+
+            // Ждем готовности окна
+            _movingWindowReady.Wait(TimeSpan.FromSeconds(5));
         }
 
         private void ChangeQuote()
@@ -345,6 +439,11 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            if (_movingDispatcher != null)
+            {
+                _movingDispatcher.InvokeShutdown();
+            }
+            _movingThread?.Join(1000);
             System.Windows.Application.Current.Shutdown();
         }
 
@@ -429,18 +528,15 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
             _scale = Math.Clamp(_initialScale * deltaScale, 0.25, 5);
 
-            var left = _initialLeft + (_initialClickPoint.X * (1 - deltaScale));
-            var top = _initialTop + (_initialClickPoint.Y * (1 - deltaScale));
+            double left = _initialLeft + (_initialClickPoint.X * (1 - deltaScale));
+            double top = _initialTop + (_initialClickPoint.Y * (1 - deltaScale));
 
-            this.Dispatcher.InvokeAsync(() =>
-            {
-                GlobalScale.ScaleX = _scale;
-                Left = left;
-                GlobalScale.ScaleY = _scale;
-                Top = top;
+            GlobalScale.ScaleX = _scale;
+            Left = left;
+            GlobalScale.ScaleY = _scale;
+            Top = top;
 
-                _alreadyResizing = false;
-            }, DispatcherPriority.Background);
+            _alreadyResizing = false;
         }
 
         private void Window_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -585,36 +681,6 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             s = s + (1 - s) / 2;
 
             var interpolatedColor = HSLToRGB(h, s, l);
-
-/*            double gray1 = (_colors[_currentColor].R + _colors[_currentColor].G + _colors[_currentColor].B) / 3;
-            double dred1 = _colors[_currentColor].R - gray1;
-            double dgreen1 = _colors[_currentColor].G - gray1;
-            double dblue1 = _colors[_currentColor].B - gray1;
-
-            double gray2 = (_colors[_nextColor].R + _colors[_nextColor].G + _colors[_nextColor].B) / 3;
-            double dred2 = _colors[_nextColor].R - gray2;
-            double dgreen2 = _colors[_nextColor].G - gray2;
-            double dblue2 = _colors[_nextColor].B - gray2;
-
-            var interpolatedColor = Color.FromArgb(
-                255,
-                (byte)SineLerp(_colors[_currentColor].R, _colors[_nextColor].R, progress),
-                (byte)SineLerp(_colors[_currentColor].G, _colors[_nextColor].G, progress),
-                (byte)SineLerp(_colors[_currentColor].B, _colors[_nextColor].B, progress)
-            );
-
-            double gray = (interpolatedColor.R + interpolatedColor.G + interpolatedColor.B) / 3;
-            double dRed = interpolatedColor.R - gray;
-            double dGreen = interpolatedColor.G - gray;
-            double dBlue = interpolatedColor.B - gray;
-
-            double targetRed = 
-
-            double d = targetGray / gray;
-
-            interpolatedColor = Color.FromHsv(
-
-            var ensaturatedColor = SaturateRGB(interpolatedColor, 3);*/
 
             var gradient = new LinearGradientBrush(
                 Colors.White,

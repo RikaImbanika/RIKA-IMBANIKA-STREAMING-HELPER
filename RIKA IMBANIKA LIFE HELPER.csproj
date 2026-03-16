@@ -7,12 +7,16 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <ApplicationIcon>RIKA IMBANIKA HELPER PROGRAM FILES\Images\KOSHKA.ico</ApplicationIcon>
+    <ApplicationIcon>LIFE HELPER PROGRAM FILES\Images\KOSHKA.ico</ApplicationIcon>
     <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="RIKA IMBANIKA HELPER PROGRAM FILES\Images\KOSHKA.ico" />
+    <Content Include="LIFE HELPER PROGRAM FILES\Images\KOSHKA.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="RIKA IMBANIKA HELPER PROGRAM FILES\Images\" />
   </ItemGroup>
 
 </Project>
