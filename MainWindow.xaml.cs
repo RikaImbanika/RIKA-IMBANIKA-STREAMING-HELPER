@@ -203,7 +203,6 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             });
         }
 
-        // Улучшенный метод запуска отдельного потока
         private void StartMovingImageInSeparateThread()
         {
             _movingWindowReady.Reset();
@@ -212,7 +211,6 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             {
                 try
                 {
-                    // Создаем диспетчер для этого потока
                     _movingDispatcher = Dispatcher.CurrentDispatcher;
 
                     _movingWindow = new MovingImageWindow($"{S.PF}Images\\Sparkle.png");
@@ -223,7 +221,6 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
 
                     _movingWindowReady.Set();
 
-                    // Запускаем диспетчер (это блокирующий вызов)
                     Dispatcher.Run();
                 }
                 catch (Exception ex)
@@ -642,12 +639,14 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             int currentInterval = (int)(totalMinutes / _colorDurationMinutes);
             double progress = (totalMinutes % _colorDurationMinutes) / _colorDurationMinutes;
 
-            if (_actualElapsed.Days > _lastDayCheck)
+            if (_actualElapsed.Hours > 10) //Now 10 hours = 1 M
             {
                 _M++;
                 SaveM(_M);
                 TheM.Text = $"M{_M}";
-                _lastDayCheck = _actualElapsed.Days;
+                _actualElapsed = TimeSpan.FromSeconds(0);
+                Console.Beep(3000, 333);
+                //_lastDayCheck = _actualElapsed.Days;
             }
 
             if (currentInterval != _lastProcessedInterval)
