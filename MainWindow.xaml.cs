@@ -597,7 +597,7 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             else
                 SaveM(0);
 
-            TheM.Text = $"M{_M}";
+            TheM.Text = $"#{_M}";
         }
 
         private void SaveState()
@@ -639,13 +639,18 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             int currentInterval = (int)(totalMinutes / _colorDurationMinutes);
             double progress = (totalMinutes % _colorDurationMinutes) / _colorDurationMinutes;
 
-            if (_actualElapsed.Hours > 10) //Now 10 hours = 1 M
+            if (_actualElapsed.TotalHours >= 10) //Now 10 hours = 1 M
             {
                 _M++;
                 SaveM(_M);
                 TheM.Text = $"M{_M}";
                 _actualElapsed = TimeSpan.FromSeconds(0);
-                Console.Beep(3000, 333);
+                _lastStartElapsed = TimeSpan.FromSeconds(0);
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.Beep(3000, 333);
+                    Thread.Sleep(100);
+                }
                 //_lastDayCheck = _actualElapsed.Days;
             }
 
