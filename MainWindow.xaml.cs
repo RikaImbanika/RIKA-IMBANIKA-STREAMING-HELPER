@@ -643,9 +643,10 @@ namespace RIKA_IMBANIKA_LIFE_HELPER
             {
                 _M++;
                 SaveM(_M);
-                TheM.Text = $"M{_M}";
+                TheM.Text = $"#{_M}";
                 _actualElapsed = TimeSpan.FromSeconds(0);
                 _lastStartElapsed = TimeSpan.FromSeconds(0);
+                _lastStartTime = DateTime.Now;
                 for (int i = 0; i < 5; i++)
                 {
                     Console.Beep(3000, 333);
