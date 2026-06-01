@@ -29,6 +29,8 @@ E!
 Yep)
 Мандарины.
 Нектарины.
+Уххх!
+Memes.
 Калыван.
 Look at me!|I'm burning!
 Впрочем это уже|совсем другая|история
@@ -174,7 +176,7 @@ Dirty DDD id
 Айййъ, маладэтцс!
 Купи ежа!
 OMG!
-Hello? Helloooooo?!ы
+Hello? Helloooooo?!
 We shell never surrender
 Реально.
 Нереально!
@@ -208,7 +210,6 @@ WHO EAT ALL MY DONUTS?
 Нежданчик.
 Ваааааау!
 Wait, what?
-Я сначала не ПОНЯл|а потом как ПОНЯл!
 Imba!
 Keshka Kirieshka
 /gamemode 1
