@@ -20,6 +20,7 @@ Nya!
 НЯ!
 Mi!
 Mi mi mi!
+big
 E!
 /tpaccept
 Панятна...
@@ -39,6 +40,7 @@ You are pony, right?|Right?
 Ps, u'r cute!
 А ГЛАВНОЕ|А главное
 Welcome to Silent Hill
+#FuckEntropy
 Невероятно!
 Oi wei!
 Ты няшка)
@@ -316,7 +318,7 @@ GG TIMA RAKOV YA LIVAU
 Вначале было слово...|И слово было:
 Вселенная бесконечна.
 Причина - и следствие.
-AT LAAAST!
+At laaast!
 Шшшшшшшшшто?
 Не жди, действуй!
 Действительно...
